@@ -27,8 +27,8 @@
     white-space: nowrap;
     padding: 20px 0;
     width: 100%;
-    -ms-overflow-style: none; /* Internet Explorer ve Edge için */
-    scrollbar-width: none; /* Firefox için */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
 
 .carousel-items a {
@@ -115,30 +115,30 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 32px; /* Buton boyutu */
+    width: 32px; 
     height: 32px;
-    background: white; /* Arka plan beyaz */
-    border-radius: 50%; /* Yuvarlatılmış kutu */
+    background: white; 
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     cursor: pointer;
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 .heart-icon:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hover efekti */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 .heart-icon::before {
-    content: "♡"; /* Boş kalp */
+    content: "♡"; 
     font-size: 18px;
     color: #555;
     transition: color 0.3s ease;
 }
 .heart-icon.active {
-    background: white; /* Arka plan değişmesin */
+    background: white; 
 }
 .heart-icon.active::before {
-    content: "❤️"; /* Dolu kalp */
+    content: "❤️"; 
     color: red;
 }
