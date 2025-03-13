@@ -1,0 +1,144 @@
+.custom-carousel {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.carousel-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 10px;
+}
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.carousel-items {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 20px 0;
+    width: 100%;
+    -ms-overflow-style: none; /* Internet Explorer ve Edge için */
+    scrollbar-width: none; /* Firefox için */
+}
+
+.carousel-items a {
+    text-decoration: none;
+}
+
+.carousel-items a:hover {
+    text-decoration: none;
+}
+
+.carousel-item {
+    min-width: 210px;
+    max-width: 220px;
+    margin-left: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+.carousel-item img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    object-fit: cover;
+}
+.product-title {
+    margin: 10px;
+    font-size: 14px;
+    color: #333;
+    white-space: normal; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word; 
+    line-height: 1.2; 
+}
+
+
+.heart-icon {
+    font-size: 14px;
+    margin: px 0;
+    padding: 0 5px;
+    color: #333;
+    font-weight: bold;
+    white-space: normal; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word; 
+    line-height: 1.2; 
+}
+
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+    
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #193DB0;
+    margin: 20px 10px;
+}
+.carousel-prev, .carousel-next {
+    position: absolute;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.5); 
+    font-size: 50px;
+}
+.carousel-prev { left: -10px; }
+.carousel-next { right: -10px; }
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px; /* Buton boyutu */
+    height: 32px;
+    background: white; /* Arka plan beyaz */
+    border-radius: 50%; /* Yuvarlatılmış kutu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.heart-icon:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hover efekti */
+}
+.heart-icon::before {
+    content: "♡"; /* Boş kalp */
+    font-size: 18px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+.heart-icon.active {
+    background: white; /* Arka plan değişmesin */
+}
+.heart-icon.active::before {
+    content: "❤️"; /* Dolu kalp */
+    color: red;
+}
